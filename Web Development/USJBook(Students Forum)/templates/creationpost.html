@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <div class="'main">
+        <nav>
+            <label class='logo'>USJFORUM</label>
+            <ul class='nav1'>
+                {% if etudiant.is_authenticated %}
+                <li><a class='list2' href="/">Home</a></li>
+                <li><a class='list2' href="/logout">Logout</a></li>
+                {% else %}
+                <li><a class='list2' href="/loginpage">Log-in</a></li>
+
+                <li><a href="/signup" id='fr'>Sign-up</a></li>
+           
+                {% endif %}
+            </ul>
+        </nav>
+        
+    </div>
+  
+{% for message in get_flashed_messages() %}
+	
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  {{ message }}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+
+{% endfor %}
+    <h2 class="titre"> You have a  Question?! Dont hesitate!</h2>
+    <div class="createpost" >
+        <form method="post" class="form2">
+            <h3 class="titre">Insert your Question!</h3>
+            <textarea class='question' name="post"></textarea>
+            <button type="submit" class='button2'>Terminé</button>
+        </form>
+        <a href="/main"><button style="margin-top:40px" class='button2'>Back</button></a>
+
+        
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
