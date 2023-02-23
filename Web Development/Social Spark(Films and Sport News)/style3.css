@@ -1,0 +1,384 @@
+html {
+    box-sizing: border-box;
+  }
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+.page{ 
+    width: 100%;
+    min-height: 220vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images4/img-3.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 100px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+    margin-top: -5px;
+}
+.nav-links{
+    text-align: right;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,3,.7));
+    padding: 0px 10px;
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+}
+.nav-links ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 25px;
+    margin-bottom: 10px;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li a:hover{
+    color: #38ACEC;
+}
+.nav-links ul li a button{
+    padding: 7px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 15px;
+}
+.nav-links ul li a button:hover{
+    background-color: #38ACEC;
+    color: #fff;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+button:hover{
+    color: #fff;
+    background-color: #38ACEC;
+    border-color: #fff;
+}
+.column1{
+    float: left;
+    padding-top: 80px;
+}
+.left1{
+    width: 55%;
+}
+.right1{
+    width: 37%;
+    margin-right: 8%;
+}
+.localpics img{
+    width: 100%;
+    display: block;
+    border: solid 2px #000;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+.column2{
+    float: left;
+    margin-top: 20px;
+}
+.left2{
+    width: 46%;
+}
+.right2{
+    width: 46%;
+    margin-right: 8%;
+}
+.columnsport{
+    margin: 0 auto;
+}
+.container{
+    width: 52%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,.5));
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.sportspic{
+    margin-bottom: 5px;
+    align-items: center;
+    padding-top: 4px;
+}
+.sportspic img{
+    border-radius: 5px;
+    border: solid 1px #fff;
+    margin-top: 20px;
+    text-align: left;
+    height: 400px;
+    width: 600px;
+}
+.sportstext{
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+h1{
+    font-size: 30px;
+    color: #fff;
+}
+p1{
+    font-size: 15px;
+    color: #fff;
+}
+.pagenumbers{
+    text-align: center;
+    padding-left: 24%;
+
+}
+pagebutton{
+    width: 25px;
+    color: #000;
+    font-size: 17px;
+    background: #fff;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    border: none;
+    border-radius: 7px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+pagebutton:hover{
+    color: #fff;
+    background-color: #38ACEC;
+    border-color: #fff;
+}
+pagebutton:disabled,
+pagebutton[disabled]{
+    color: #fff;
+    background: #38ACEC;
+}
+
+@media screen and (max-width: 650px) {
+    .about-text{
+        align-items: center;
+        text-align: center;
+        padding-left: 70px;
+    }
+    .container{
+    width: 90%;
+    padding-bottom: 50%;
+    margin-bottom: 20px;
+    }
+    .sportspic img{
+        width: 80%;
+        height: 50%;
+    }
+    .pagenumbers{
+        margin-top: 20px;
+    }
+    .page{
+        padding-left: 1%;
+    }
+    .col-1{
+        width: 100%;
+        display: block;
+    }
+    .col-2{
+        width: 100%;
+        display: block;
+    }
+    .col-4{
+        width: 100%;
+        display: block;
+    }
+    .col-5{
+        width: 100%;
+        display: block;
+    }
+    
+}
+.allnews{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.usjpics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.usjpics img{
+    width: 420px;
+    height: 270px;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+.usjpics img:hover{
+    border-color: #7D0541;
+}
+h5{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 50px;
+}
+p1{
+    color: #fff;
+    font-size: 15px;
+}
+.movies-section{
+    padding: 30px 0;
+    padding-right: 50px;
+    position: relative;
+}
+.movies-text{
+    text-align: center;
+    margin-right: 70px;
+    align-items: center;
+}
+.column{
+    float: left;
+    width: 30%;
+    margin-bottom: 15px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+pm{
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    display: none;
+    padding-bottom: 5px;
+}
+.card:hover pm{
+    display: block;
+} 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    background: none;
+    margin-right: 10px;
+}
+.card:hover pm{
+    display: block;
+}
+.card:hover{
+    border-color:  #38ACEC;
+}
+.container3{
+    padding: 0 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-color: #000;
+  }
+  
+.container3::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+h4{
+    position: relative;
+    color: #fff;
+    padding: 5px 1px;
+    font-size: 32px;
+}
+p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+}
+h4:after{
+    content: '';
+    position: absolute;
+    align-items: center;
+    height: 2px;
+    width: 50px;
+    left: 5px;
+    bottom: 0;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #38ACEC 10%, #1589FF 100%);
+}
+button1{
+    width: 200px;
+    height: 60px;
+    color: #000;
+    font-size: 17px;
+    background: #fff;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;          
+    float: left;
+    border: none;
+    border-radius: 7px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+button1:hover{
+    color: #fff;
+    background-color: #38ACEC;
+    border-color: #fff;
+}
+button1:disabled,
+button1[disabled]{
+    color: #fff;
+    background: #38ACEC;
+}
+.pagenumber{
+    text-align: center;
+    padding-left: 30px;
+
+}
+.allnews{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.musicpics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.musicpics img{
+    width: 420px;
+    height: 270px;
+    border: dashed;
+    border-color: #38ACEC;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+.musicpics img:hover{
+    border-color: blue;
+}
+
+.localpics:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+  }
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'PT Serif', serif;
+    margin: 0;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+.page{ 
+    width: 100%;
+    min-height: 140vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(images/111.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    box-sizing: border-box;
+}
+
+.logo{
+    margin-top: 5px;
+    width: 100px;
+}
+.first-page {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 110px;
+}
+h1{
+    font-size: 50px;
+    margin: 0 auto;
+    font-family: Rajdhani;
+    color: #FFFAFA;
+}
+p{
+    font-family: Patrick Hand;
+    font-size: 25px;
+    margin: 0 auto;
+    color: #FFFAFA;
+}
+.btn-group{
+    padding: 20px 0px;
+    display: block;
+
+}
+.btn-group button {
+    border-color: solid #FFFAFA 1px;
+    margin: 0 auto;
+    font-size: 20px;
+    background: none;
+    color: #FFFAFA;
+    display: block;
+    width: 120px;
+    cursor: pointer;
+}
+.btn-group a{
+    text-decoration: none;
+}
+.btn-group button:hover {
+    background-color: #D4D4D4;
+  }
+.date-text{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Patrick Hand;
+    color: #fff;
+}
